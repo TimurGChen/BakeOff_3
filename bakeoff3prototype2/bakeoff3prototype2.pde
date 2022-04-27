@@ -164,7 +164,7 @@ void drawKeyboard() {
           rect(curX, curY, keyWidth * 2, keyHeight * 1.5);
         }
       }
-      if(currentTyped.length() != 0 && ((currentTyped.length() != currentPhrase.length()))) {
+      if(currentTyped.length() != 0 && ((currentTyped.length() < currentPhrase.length()))) {
         if(currentPhrase.charAt(currentTyped.length() - 1) == currentTyped.charAt(currentTyped.length() - 1)) {
           if(currentPhrase.charAt(currentTyped.length()) == keyRows[i][j]){
             rect(curX, curY, keyWidth * 2, keyHeight * 1.5);
